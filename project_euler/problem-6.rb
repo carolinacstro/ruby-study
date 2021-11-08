@@ -5,6 +5,7 @@ quadrado = (1..10).each { |numero| numero ** 2 }
 
 soma_dos_quadrados = quadrado.reduce { |numeros, quadrado| numeros + quadrado }
 
+
 puts soma_dos_quadrados
 
 
