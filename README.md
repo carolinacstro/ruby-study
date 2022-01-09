@@ -1,3 +1,3 @@
 # ruby-study
 
-atividades com a linguagem ruby 
+- Atividades com o objetivo de praticar a linguagem ruby.
