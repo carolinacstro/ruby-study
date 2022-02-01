@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'movie'
+require 'yaml'
 
 get('/movies') do 
     @movies = []
@@ -15,3 +16,10 @@ end
 get('/movies/new') do 
     erb :new 
 end 
+
+post('/movies/create') do 
+    @movie = Movie.new 
+    @movie.title = params['title']
+    @movie.director = params['director']
+    @movie.year = params['year']
+end
